@@ -35,7 +35,7 @@ public class Main {
         dragons[] myDragons = new dragons[count];
 
         for (int i = 0; i < count; i++) {
-            System.out.println("\nСтворюємо дракона #" + (i + 1));
+            System.out.println("Створюємо дракона №" + (i + 1));
 
             System.out.print("Введіть ім'я дракона: ");
             String name = scanner.nextLine();
@@ -51,12 +51,12 @@ public class Main {
         }
 
         // 🔹 3. Виводимо всіх створених драконів
-        System.out.println("\n=== Твої дракони ===");
+        System.out.println("=== Твої дракони ===");
         for (dragons d : myDragons) {
             System.out.println("Ім'я: " + d.getName() + ", Вік: " + d.getAge() + ", Вага: " + d.getWeight());
         }
 
-        System.out.println("\n=== Дракони ожили! ===");
+        System.out.println("=== Дракони ожили! ===");
         for (dragons d : myDragons) {
             d.roar();
         }
