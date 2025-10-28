@@ -1,6 +1,6 @@
 package lesson_16_class_object.animals;
 
-public class dragons {
+public class Dragon {
 
     // Додати поля класу: ім’я, вік, вага
     private String name;
