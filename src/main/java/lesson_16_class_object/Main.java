@@ -1,12 +1,12 @@
 package lesson_16_class_object;
 
-import lesson_16_class_object.animals.dragons;
+import lesson_16_class_object.animals.Dragon;
 import java.util.Scanner;
 
 public class Main {
     static void main() {
 
-        dragons  morgul = new dragons();
+        Dragon morgul = new Dragon();
         morgul.setName("Morgul");
         morgul.setAge(90);
         morgul.setWeight(365);
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Вік дракона: " + morgul.getAge());
         System.out.println("Вага дракона: " + morgul.getWeight());
 
-        dragons amour = new dragons("Vhagar", 68, 338);
+        Dragon amour = new Dragon("Vhagar", 68, 338);
 
         System.out.println("Дракона звати: " + amour.getName());
         System.out.println("Вік дракона: " + amour.getAge());
@@ -32,7 +32,7 @@ public class Main {
         scanner.nextLine();
 
 
-        dragons[] myDragons = new dragons[count];
+        Dragon[] myDragons = new Dragon[count];
 
         for (int i = 0; i < count; i++) {
             System.out.println("Створюємо дракона №" + (i + 1));
@@ -47,17 +47,17 @@ public class Main {
             double weight = scanner.nextDouble();
             scanner.nextLine();
 
-            myDragons[i] = new dragons(name, age, weight);
+            myDragons[i] = new Dragon(name, age, weight);
         }
 
-        // 🔹 3. Виводимо всіх створених драконів
+        // 3. Виводимо всіх створених драконів
         System.out.println("=== Твої дракони ===");
-        for (dragons d : myDragons) {
+        for (Dragon d : myDragons) {
             System.out.println("Ім'я: " + d.getName() + ", Вік: " + d.getAge() + ", Вага: " + d.getWeight());
         }
 
         System.out.println("=== Дракони ожили! ===");
-        for (dragons d : myDragons) {
+        for (Dragon d : myDragons) {
             d.roar();
         }
 

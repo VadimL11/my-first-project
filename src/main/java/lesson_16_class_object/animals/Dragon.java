@@ -1,6 +1,6 @@
 package lesson_16_class_object.animals;
 
-public class dragons {
+public class Dragon {
 
     // Додати поля класу: ім’я, вік, вага
     private String name;
@@ -9,12 +9,12 @@ public class dragons {
 
 
     // Створити конструктор без параметрів і додати sout
-    public dragons() {
+    public Dragon() {
         System.out.println("Створено невідомго дракона");
     }
 
     // Створити конструктор із параметрами
-    public dragons(String name, int age, double weight) {
+    public Dragon(String name, int age, double weight) {
         System.out.println("Викликано конструктор з параметрами");
 
         this.name = name;
