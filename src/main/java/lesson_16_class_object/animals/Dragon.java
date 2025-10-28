@@ -5,7 +5,7 @@ public class Dragon {
     // Додати поля класу: ім’я, вік, вага
     private String name;
     private int age;
-    private double weight;
+    private static double weight;
 
 
     // Створити конструктор без параметрів і додати sout
@@ -45,8 +45,20 @@ public class Dragon {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
     public void roar() {
         System.out.println(name + " випускає вогонь! 🔥");
     }
 
+    public void voice() {
+        System.out.println("Арррррррр!");
     }
+
+    @Override
+    public String toString() {
+        return "Dragon{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}

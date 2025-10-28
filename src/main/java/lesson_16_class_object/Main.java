@@ -4,6 +4,7 @@ import lesson_16_class_object.animals.Dragon;
 import java.util.Scanner;
 
 public class Main {
+
     static void main() {
 
         Dragon morgul = new Dragon();
@@ -60,8 +61,13 @@ public class Main {
         for (Dragon d : myDragons) {
             d.roar();
         }
+        for (Dragon d : myDragons) {
+            d.voice();
+        }
+
 
         scanner.close();
+
 
         }
 
