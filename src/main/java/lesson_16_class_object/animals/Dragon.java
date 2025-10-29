@@ -6,6 +6,7 @@ public class Dragon {
     private String name;
     private int age;
     private static double weight;
+    private Breed breed;
 
 
     // Створити конструктор без параметрів і додати sout
@@ -14,12 +15,21 @@ public class Dragon {
     }
 
     // Створити конструктор із параметрами
-    public Dragon(String name, int age, double weight) {
+    public Dragon(String name, int age, double weight, Breed breed) {
         System.out.println("Викликано конструктор з параметрами");
 
         this.name = name;
         this.age = age;
         this.weight = weight;
+        this.breed = breed;
+    }
+
+    public Breed getBreed() {
+        return breed;
+    }
+
+    public void setBreed(Breed breed) {
+        this.breed = breed;
     }
 
     public String getName() {
