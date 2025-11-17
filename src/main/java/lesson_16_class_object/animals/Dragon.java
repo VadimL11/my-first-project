@@ -1,5 +1,7 @@
 package lesson_16_class_object.animals;
 
+import java.util.Objects;
+
 public class Dragon {
 
     // Додати поля класу: ім’я, вік, вага
@@ -70,5 +72,17 @@ public class Dragon {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Dragon dragon = (Dragon) o;
+        return age == dragon.age && Objects.equals(name, dragon.name) && breed == dragon.breed;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, breed);
     }
 }

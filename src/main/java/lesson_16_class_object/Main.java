@@ -29,6 +29,8 @@ public class Main {
         System.out.println("Створено повноцінного дракона");
         System.out.println();
 
+        System.out.println(morgul.equals(vhagar));
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("🔥 Створимо своїх драконів!");
@@ -92,7 +94,8 @@ public class Main {
         scanner.close();
 
 
-        }
+    }
+
 
     }
 
