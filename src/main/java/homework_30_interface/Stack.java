@@ -23,8 +23,8 @@ public class Stack implements Stackable {
     @Override
     public void push(int element) {
         if (isFull()) {
-            System.out.println("Стек повний!");
-            return;
+            throw new StackFullException("Стек повний!");
+
         }
 
         top++;
@@ -34,8 +34,8 @@ public class Stack implements Stackable {
     @Override
     public int pop() {
         if (isEmpty()) {
-            System.out.println("Стек порожній!");
-            return -1;
+            throw new StackEmptyException("Стек порожній!");
+
         }
 
         int value = data[top];
@@ -47,8 +47,8 @@ public class Stack implements Stackable {
     @Override
     public int peek() {
         if (isEmpty()) {
-            System.out.println("Стек порожній!");
-            return -1;
+            throw new StackEmptyException("Стек порожній!");
+
         }
 
         return data[top];
