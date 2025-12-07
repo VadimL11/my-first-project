@@ -1,5 +1,8 @@
 package homework_30_interface;
 
+
+import java.util.Optional;
+
 public class Stack implements Stackable {
 
     private int[] data;
@@ -52,5 +55,18 @@ public class Stack implements Stackable {
         }
 
         return data[top];
+
+
+    }
+
+    @Override
+    public Optional<Integer> popOptional() {
+        if (isEmpty()) {
+            return Optional.empty();
+        }
+
+        int value = data[top];
+        top--;
+        return Optional.of(value);
     }
 }
