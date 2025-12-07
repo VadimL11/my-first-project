@@ -19,7 +19,7 @@ public class ListUtils {
         return result;
     }
 
-    public Map<String, Integer> mergeMaps(Map<String, Integer> map1,
+    public Map<String, Integer> joinMaps(Map<String, Integer> map1,
                                           Map<String, Integer> map2) {
 
         Map<String, Integer> result = new HashMap<>(map1);
