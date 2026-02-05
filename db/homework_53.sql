@@ -1,3 +1,4 @@
+
 CREATE TABLE instruments (
                              id SERIAL PRIMARY KEY,
                              brand TEXT,
